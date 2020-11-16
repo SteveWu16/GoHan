@@ -11,15 +11,20 @@ namespace GoHan.Controllers
 {
     public class HomeController : Controller
     {
+        private NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+
+        /*
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
+        */
 
         public IActionResult Index()
         {
+            logger.Debug("Debug");
             return View();
         }
 

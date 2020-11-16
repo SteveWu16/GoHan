@@ -12,8 +12,6 @@ C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.csprojAssemblyReference.cache
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.AssemblyInfoInputs.cache
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.AssemblyInfo.cs
-C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.csproj.CoreCompileInputs.cache
-C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.RazorAssemblyInfo.cache
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.RazorAssemblyInfo.cs
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.TagHelpers.input.cache
@@ -35,3 +33,7 @@ C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.pdb
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.genruntimeconfig.cache
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.csproj.CopyComplete
+C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.csproj.CoreCompileInputs.cache
+C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.MvcApplicationPartsAssemblyInfo.cache

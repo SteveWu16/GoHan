@@ -4,4 +4,19 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.5" />
+    <PackageReference Include="NLog.Config" Version="4.7.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="log\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="C:\Users\steven.wu66\.nuget\packages\nlog.config\4.7.5\contentFiles\any\any\NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
