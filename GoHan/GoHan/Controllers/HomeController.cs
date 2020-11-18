@@ -9,20 +9,9 @@ using GoHan.Models;
 
 namespace GoHan.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
-
-        /*
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-        */
-
-        public IActionResult Index()
+        public override IActionResult Index()
         {
             logger.Debug("Debug");
             return View();
