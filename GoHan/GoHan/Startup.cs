@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace GoHan
 {
@@ -34,7 +35,7 @@ namespace GoHan
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DBContext dbContext)
         {
             if (env.IsDevelopment())
             {
@@ -56,6 +57,7 @@ namespace GoHan
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            dbContext.Database.EnsureCreated();
         }
     }
 }
