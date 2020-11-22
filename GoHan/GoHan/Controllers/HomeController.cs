@@ -1,35 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using GoHan.Models;
+using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace GoHan.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+        private readonly DBContext _dbContext;
 
-        /*
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(DBContext dbContext)
         {
-            _logger = logger;
+            _dbContext = dbContext;
         }
-        */
 
-        public IActionResult Index()
+        public override IActionResult Index()
         {
+            var content = "";
+
             logger.Debug("Debug");
+            logger.Info($"{_dbContext.DBInit}");
+
+            foreach(var c in _dbContext.DBInit)
+            {
+                content += $"id = {c.id}, DateTime = {c.Date}, Message = {c.Message}";
+            }
+
+            ViewBag.Content = content;
             return View();
         }
 
         public IActionResult Privacy()
         {
+
             return View();
         }
 
