@@ -7,11 +7,17 @@ namespace GoHan
     {
         public DBContext(DbContextOptions<DBContext> options) : base(options) { }
         public DbSet<DBInitialModel> DBInit { get; set; }
+        public DbSet<UserInfoModel> UserInfo { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder
             .Entity<DBInitialModel>().
-            ToTable<DBInitialModel>("test");
+            ToTable("test");
+            modelBuilder
+            .Entity<UserInfoModel>().
+            ToTable("userinfo");
+
         }
     }
 }
