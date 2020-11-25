@@ -4,6 +4,7 @@ using GoHan.Models;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System;
+using System.Linq;
 
 namespace GoHan.Controllers
 {
@@ -18,57 +19,18 @@ namespace GoHan.Controllers
 
         public override IActionResult Index()
         {
-            var content = "";
+            var content = "請登入啦";
 
-            logger.Debug("Debug");
-
-
-            foreach (var c in _dbContext.DBInit)
-            {
-                content += $"id = {c.id}, DateTime = {c.Date}, Message = {c.Message}";
-            }
-
-            logger.Info($"{content}");
             ViewBag.Content = content;
-
-            ViewBag.RegisterResult = Register("Steven1", "test1234");
 
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult RegisterPage()
         {
-            // Establish DB connection
-            var connString = "Server=127.0.0.1; Port=3306;User Id=root;Password=No5teven_HMW;Database=gohandb;charset=utf8;";
-            var conn = new MySqlConnection
-            {
-                ConnectionString = connString
-            };
+            var content = "請註冊啦";
 
-            if (conn.State != ConnectionState.Open)
-                conn.Open();
-
-            string sql = @"INSERT INTO `test` (`date`, `message`) VALUES
-                           ('2020-11-21 01:00:00', 'GoHan1'),
-                           ('2020-11-21 02:00:00', 'GoHan1')";
-
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
-            int index = cmd.ExecuteNonQuery();
-            var success = false;
-            if (index > 0)
-                success = true;
-            else
-                success = false;
-
-
-            var content = "";
-            foreach (var c in _dbContext.DBInit)
-            {
-                content += $"id = {c.id}, DateTime = {c.Date}, Message = {c.Message}";
-            }
-
-            ViewBag.Content = $"Write data is {success}, the content now includes {content}";
-
+            ViewBag.Content = content;
 
             return View();
         }
@@ -79,8 +41,14 @@ namespace GoHan.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public string Register(string username, string password)
+        [HttpPost]
+        public IActionResult Register(UserInfoModel request)
         {
+            if (HasSpecialChars(request.Username) || HasSpecialChars(request.Password))
+            {
+                ViewBag.Content = "Invalid input, please don't type shit";
+                return View();
+            }
             try
             {
                 var connString = "Server=127.0.0.1; Port=3306;User Id=root;Password=No5teven_HMW;Database=gohandb;charset=utf8;";
@@ -93,30 +61,69 @@ namespace GoHan.Controllers
                     conn.Open();
 
                 string sql = $@"INSERT INTO `userinfo` (`username`, `password`) VALUES
-                           ('{username}', '{password}')";
+                           ('{request.Username}', '{request.Password}')";
 
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 var index = cmd.ExecuteNonQuery();
 
                 var success = false;
                 if (index > 0)
+                {
+                    ViewBag.Content = $"Create success on user {request.Username}";
                     success = true;
+                }
+
                 else
+                {
+                    ViewBag.Content = $"Create fail on user {request.Username}";
                     success = false;
+                }
+                
+                return View();
             }
             catch (Exception e)
             {
                 logger.Error($"Error when create player => {e}");
 
-                if (e.ToString().Contains("Primary"))
+                if (e.ToString().ToLower().Contains("primary"))
                 {
-                    return "Create player fail: Duplicate player";
+                    ViewBag.Content = "Create player fail: Duplicate player";
+                    return View();
                 }
-                return "Create player fail: Unkown error";
+
+                ViewBag.Content = "Create player fail: Unkown error";
+                return View();
 
             }
 
-            return $"Create success on user {username}";
+            
+        }
+
+        [HttpPost]
+        public IActionResult Login(UserInfoModel request)
+        {
+            if (HasSpecialChars(request.Username) || HasSpecialChars(request.Password))
+            {
+                ViewBag.Content = "Invalid input, please don't type shit";
+                return View();
+            }
+
+            foreach (var i in _dbContext.UserInfo)
+            {
+                if (request.Username == i.Username && request.Password == i.Password)
+                {
+                    ViewBag.Content = $"Welcome! {i.Username}";
+                    return View();
+                }
+            }
+
+            ViewBag.Content = "Login fail";
+            return View();
+        }
+
+        private bool HasSpecialChars(string yourString)
+        {
+            return yourString.Any(ch => !char.IsLetterOrDigit(ch));
         }
 
     }

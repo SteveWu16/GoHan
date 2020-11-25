@@ -17,7 +17,6 @@ C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.TagHelpers.output.cache
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.RazorCoreGenerate.cache
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -86,3 +85,6 @@ C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
+C:\Users\steven.wu66\Desktop\StevenProj\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\Razor\Views\Home\RegisterPage.cshtml.g.cs
