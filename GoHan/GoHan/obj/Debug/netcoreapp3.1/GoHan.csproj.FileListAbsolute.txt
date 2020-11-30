@@ -149,7 +149,6 @@ D:\MyProject\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcorea
 D:\MyProject\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\MyProject\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\MyProject\GoHan\GoHan\GoHan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\MyProject\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.csprojAssemblyReference.cache
 D:\MyProject\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.AssemblyInfoInputs.cache
 D:\MyProject\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.AssemblyInfo.cs
 D:\MyProject\GoHan\GoHan\GoHan\obj\Debug\netcoreapp3.1\GoHan.csproj.CoreCompileInputs.cache
