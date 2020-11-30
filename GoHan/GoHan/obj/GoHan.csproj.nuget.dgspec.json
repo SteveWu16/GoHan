@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\steven.wu66\\Desktop\\StevenProj\\GoHan\\GoHan\\GoHan\\GoHan.csproj": {}
+    "D:\\MyProject\\GoHan\\GoHan\\GoHan\\GoHan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\steven.wu66\\Desktop\\StevenProj\\GoHan\\GoHan\\GoHan\\GoHan.csproj": {
+    "D:\\MyProject\\GoHan\\GoHan\\GoHan\\GoHan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\steven.wu66\\Desktop\\StevenProj\\GoHan\\GoHan\\GoHan\\GoHan.csproj",
+        "projectUniqueName": "D:\\MyProject\\GoHan\\GoHan\\GoHan\\GoHan.csproj",
         "projectName": "GoHan",
-        "projectPath": "C:\\Users\\steven.wu66\\Desktop\\StevenProj\\GoHan\\GoHan\\GoHan\\GoHan.csproj",
-        "packagesPath": "C:\\Users\\steven.wu66\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\steven.wu66\\Desktop\\StevenProj\\GoHan\\GoHan\\GoHan\\obj\\",
+        "projectPath": "D:\\MyProject\\GoHan\\GoHan\\GoHan\\GoHan.csproj",
+        "packagesPath": "C:\\Users\\吳皓銘\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProject\\GoHan\\GoHan\\GoHan\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\steven.wu66\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\吳皓銘\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,11 +22,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.coreop.net/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
@@ -101,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
